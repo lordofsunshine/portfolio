@@ -4,7 +4,9 @@ window.addEventListener('scroll', function() {
 
   if (scrollPosition > 100) {
     header.classList.add('fixed');
+    header.classList.add('title');
   } else {
     header.classList.remove('fixed');
+    header.classList.remove('title');
   }
 });
