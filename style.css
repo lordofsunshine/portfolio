@@ -16,12 +16,8 @@
 body {
     background: #f5eff8;
     color: #020202;
-    background-image: url(https://cdn.glitch.global/3ec046e6-daca-4629-8edf-a932ffba4b90/bg.jpeg?v=1699607934600);
     height: 100%;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    width: 100%;
     overflow-x: hidden;
     font-family: Poppins, sans-serif;
 }
@@ -40,10 +36,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .height-format {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  transition: 0.1s;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    transition: 0.1s;
+}
+
+.height-format.fixed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    transition: 0.1s;
 }
 
 .title {
@@ -75,6 +82,13 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+.height-format.fixed .avatar-header {
+    border-radius: 50%;
+    height: 100%;
+    width: 60px;
+    overflow: hidden;
+}
+
 .card-group {
   display: flex;
 }
@@ -97,10 +111,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-content {
-  flex: 1;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
+    flex: 1;
+    margin-top: 15px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
 }
 
 .card h2 {
@@ -137,6 +152,12 @@ focus {
   cursor: pointer;
 }
 
+.box-flex {
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
 .subtitle {
     font-size: 30px;
     text-align: center;
@@ -144,9 +165,83 @@ focus {
 }
 
 .card-projects {
-    width: 100%;
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    width: -webkit-fill-available;
     margin: 0 auto;
     margin-bottom: 0px;
+}
+
+.card-full {
+    background: #e3e3e34f;
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    padding: 1px 30px;
+}
+
+.avatar-logo {
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.description-end {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.social-networks {
+    padding: 4px;
+    border-radius: 4px;
+    font-family: 'Agrandir', sans-serif;
+    margin-bottom: 10px;
+    background: rgb(207,213,255);
+    background: linear-gradient(273deg, rgba(207,213,255,0.18531162464985995) 0%, rgba(235,235,235,0.06206232492997199) 100%);
+    width: max-content;
+    display: flex;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: auto;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-end {
+    font-family: 'Agrandir', sans-serif;
+    display: flex;
+    margin: 0 auto;
+    border: 3px solid #6d57ff12;
+    flex-direction: column;
+    background: rgb(109 87 255 / 7%) 0%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+}
+
+.card-end button {
+    background: #2100ff03 0%;
+    border: 1px solid #2100ff14;
+    border-radius: 4px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    font-size: 17px;
+    color: #4733c9;
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-end img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .card-three {
@@ -185,6 +280,49 @@ focus {
   }
 }
 
+#krasivu-snezhok{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('http://zornet.ru/ZORNET-RU/ZR/Alinuversa/zorner-ru/sden.png'), url('http://zornet.ru/ZORNET-RU/ZR/Alinuversa/zorner-ru/s2.png'), url('http://zornet.ru/ZORNET-RU/ZR/Alinuversa/zorner-ru/s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.avatar-header {
+border-radius: 50%;
+    height: 100%;
+    width: 120px;
+    overflow: hidden;
+}
+
 .staff-name {
     background: linear-gradient(270deg, #0002ff, #75a7e308);
     -webkit-background-clip: text;
@@ -197,6 +335,10 @@ focus {
     color: #5e416d;
     background: #3e214d1a;
     text-shadow: none;
+}
+
+.card-end button:hover {
+    opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -252,10 +394,57 @@ focus {
     left: 0;
     width: 100%;
     padding: 4px;
-    background-color: #00000021;
+    background-color: #ffffff21;
     backdrop-filter: blur(50px);
     margin: 0;
     color: #ffffff;
     transition: 0.1s;
   }
+.card-end {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 3px solid #6d57ff12;
+    font-family: 'Agrandir', sans-serif;
+    flex-direction: column;
+    background: rgb(109 87 255 / 7%) 0%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+  .description-end {
+    width: 100%;
+    margin: 0 auto;
+}
+  .card-full {
+    background: #e3e3e34f;
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    line-height: normal;
+    padding: 1px 20px;
+}
+  .avatar-header {
+    border-radius: 50%;
+    height: 100%;
+    width: 150px;
+    overflow: hidden;
+}
+  .height-format.fixed {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: center;
+    margin: 0 auto;
+    transition: 0.1s;
+}
+  .card-projects {
+    display: block;
+    padding: 10px;
+    gap: 0;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
 }
