@@ -1,4 +1,4 @@
-<img src="https://media.discordapp.net/attachments/1124957921835499566/1170377992623624296/20231104_210349.png?ex=6558d272&is=65465d72&hm=0a3f613e3f625f2ff6004128ef9d0930d07fefa03b4db3d6931257d901d58ab5&=&width=1076&height=605" alt="banner">
+<img src="[https://media.discordapp.net/attachments/1124957921835499566/1170377992623624296/20231104_210349.png?ex=6558d272&is=65465d72&hm=0a3f613e3f625f2ff6004128ef9d0930d07fefa03b4db3d6931257d901d58ab5&=&width=1076&height=605](https://cdn.glitch.global/3ec046e6-daca-4629-8edf-a932ffba4b90/Untitled.jpg?v=1707738787074)" alt="banner">
 <h1>Небольшой сайт, рассказывающий о своих проектах и ссылки на них.</h1>
 <img width="50%" src="https://media.discordapp.net/attachments/1124957921835499566/1170378772894187673/20231104_210613.png?ex=6558d32c&is=65465e2c&hm=16c1b5a8920c08990d156c977791c926edda20540f83279b74718e206bfd2f7f&=&width=1076&height=605" alt="banner">
 <img src="https://media.discordapp.net/attachments/1124957921835499566/1173968390679961700/image.jpg?ex=6565e243&is=65536d43&hm=01360ddd60c18c3ff2856e22bc45240254ad7719cb7156424d37b5720b63f22a&=&width=1322&height=605" alt="banner">
